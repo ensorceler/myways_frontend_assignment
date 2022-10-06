@@ -63,8 +63,8 @@ export default function DayWeather({
           <Image className="w-full h-full" src={rainy_weather} />
         )}
       </div>
-      <p>{date}</p>
-      <p>{day}</p>
+      <p className="text-sm">{date}</p>
+      <p className="text-center">{day}</p>
     </div>
   );
 }

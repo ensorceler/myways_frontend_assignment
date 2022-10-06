@@ -5,7 +5,7 @@ export default function WindInfo() {
   return (
     <div className="px-4 py-2 flex flex-col justify-center items-center bg-white bg-opacity-20 backdrop-blur-md rounded-xl">
       <div className="flex flex-row justify-center items-center gap-2">
-        <p className="text-lg ">Wind </p>
+        <p className="text-lg font-medium ">Wind </p>
         <WindIcon />
       </div>
       <div className="mb-4 flex flex-row justify-center items-center rounded-full ">

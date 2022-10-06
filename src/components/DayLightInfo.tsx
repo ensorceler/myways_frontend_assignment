@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import clockHands from "../../public/clock_hands.png";
 import weatherJsonData from "../../public/weather.json";
+import { BsInfoCircleFill as InfoIcon } from "react-icons/bs";
 
 const sunrise_time = weatherJsonData.query.results.channel.astronomy.sunrise;
 const sunset_time = weatherJsonData.query.results.channel.astronomy.sunset;
@@ -20,6 +21,12 @@ const calculatingGoldenHour = () => {
 const [golden_hour_sunrise, golden_hour_sunset] = calculatingGoldenHour();
 
 export default function DayLightInfo() {
+  const goldenHourWiki = () => {
+    window.open(
+      "https://en.wikipedia.org/wiki/Golden_hour_(photography)",
+      "_blank"
+    );
+  };
   return (
     <div
       aria-label="sunrise_sunset"
@@ -38,7 +45,10 @@ export default function DayLightInfo() {
 
       {/** golden hour */}
       <div className="flex flex-col gap-2 items-center ">
-        <p className="font-light text-xl text-center">Golden Hour</p>
+        <div className="flex flex-row items-center gap-1">
+          <p className="font-light text-xl text-center">Golden Hour</p>
+          <InfoIcon onClick={goldenHourWiki} />
+        </div>
         <div className="h-40 w-24  rounded-full bg-white bg-opacity-30 backdrop-blur-md flex flex-col items-center justify-center">
           <div className="h-14 w-14">
             <Image className="h-full w-full" src={clockHands} />

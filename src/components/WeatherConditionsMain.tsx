@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   location_data,
   today_date,
@@ -28,6 +28,14 @@ export default function WeatherConditionsMain({
   const changeTemperatureUnit = (val: string) => {
     setSelectedTemp(val);
   };
+  const scrollRef = useRef<any>();
+
+  useEffect(() => {
+    if (toggleShowMore === true) {
+      scrollRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [toggleShowMore]);
+
   return (
     <div className="ml-auto mr-auto max-w-sm sm:max-w-lg md:max-w-2xl lg:flex-1 py-4 ">
       {/** location and search  */}
@@ -57,7 +65,7 @@ export default function WeatherConditionsMain({
       </div>
 
       <div className="my-2">
-        <p className="font-medium text-lg ">
+        <p className="font-base text-base ">
           Weather is{" "}
           <span className="font-semibold">{today_weather_condition}</span>{" "}
           today.
@@ -120,6 +128,7 @@ export default function WeatherConditionsMain({
 
       <WeekWeatherView tempUnit={selectedTemp} />
       {toggleShowMore && <MoreInfoSmallDevices />}
+      <div ref={scrollRef}></div>
     </div>
   );
 }
