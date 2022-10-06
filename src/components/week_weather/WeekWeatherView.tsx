@@ -15,7 +15,7 @@ function WeekWeatherViewSmallScreen({ tempUnit }: WeekWeatherViewProps) {
     <div className="sm:hidden">
       <Swiper spaceBetween={10} slidesPerView={3}>
         {forecastData.map((item, index) => (
-          <SwiperSlide>
+          <SwiperSlide key={index}>
             <DayWeather
               key={index}
               temp_unit={tempUnit}
@@ -41,7 +41,7 @@ function WeekWeatherViewMediumScreen({ tempUnit }: WeekWeatherViewProps) {
     <div className="hidden sm:block lg:hidden">
       <Swiper spaceBetween={10} slidesPerView={4}>
         {forecastData.map((item, index) => (
-          <SwiperSlide>
+          <SwiperSlide key={index}>
             <DayWeather
               key={index}
               temp_unit={tempUnit}
@@ -69,7 +69,7 @@ export function WeekWeatherViewLargeScreen({ tempUnit }: WeekWeatherViewProps) {
       <div className="hidden lg:block ">
         <Swiper className="h-full w-full" spaceBetween={10} slidesPerView={7}>
           {forecastData.map((item, index) => (
-            <SwiperSlide>
+            <SwiperSlide key={index}>
               <DayWeather
                 key={index}
                 temp_unit={tempUnit}

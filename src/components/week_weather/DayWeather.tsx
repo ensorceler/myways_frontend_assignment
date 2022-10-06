@@ -45,22 +45,46 @@ export default function DayWeather({
       </p>
       <div className="h-10 w-10">
         {weather_type === "Breezy" && (
-          <Image className="w-full h-full" src={breezy_weather} />
+          <Image
+            alt="weather_type"
+            className="w-full h-full"
+            src={breezy_weather}
+          />
         )}
         {weather_type === "Cloudy" && (
-          <Image className="w-full h-full" src={cloudy_weather} />
+          <Image
+            alt="weather_type"
+            className="w-full h-full"
+            src={cloudy_weather}
+          />
         )}
         {weather_type === "Partly Cloudy" && (
-          <Image className="w-full h-full" src={party_cloudy_weather} />
+          <Image
+            alt="weather_type"
+            className="w-full h-full"
+            src={party_cloudy_weather}
+          />
         )}
         {weather_type === "Scattered Showers" && (
-          <Image className="w-full h-full" src={scattered_showers_weather} />
+          <Image
+            alt="weather_type"
+            className="w-full h-full"
+            src={scattered_showers_weather}
+          />
         )}
         {weather_type === "Mostly Cloudy" && (
-          <Image className="w-full h-full" src={mostly_cloudy_weather} />
+          <Image
+            alt="weather_type"
+            className="w-full h-full"
+            src={mostly_cloudy_weather}
+          />
         )}
         {weather_type === "Rain" && (
-          <Image className="w-full h-full" src={rainy_weather} />
+          <Image
+            alt="weather_type"
+            className="w-full h-full"
+            src={rainy_weather}
+          />
         )}
       </div>
       <p className="text-sm">{date}</p>

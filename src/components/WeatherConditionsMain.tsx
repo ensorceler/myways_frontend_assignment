@@ -40,7 +40,7 @@ export default function WeatherConditionsMain({
     <div className="ml-auto mr-auto max-w-sm sm:max-w-lg md:max-w-2xl lg:flex-1 py-4 ">
       {/** location and search  */}
       <div
-        aria-lable="location and searchbox"
+        aria-label="location and searchbox"
         className="flex flex-row justify-between"
       >
         <div className="flex flex-row items-center gap-4">
@@ -86,7 +86,7 @@ export default function WeatherConditionsMain({
       </div>
 
       {/** day and date */}
-      <div aria-lable="date" className="mt-4">
+      <div aria-label="date" className="mt-4">
         <p className="text-xl">{today_date}</p>
       </div>
 

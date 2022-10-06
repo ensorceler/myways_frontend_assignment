@@ -12,7 +12,7 @@ export default function SwitchTempUnitButton({
   };
   return (
     <div
-      arial-label="temperature_switch"
+      aria-label="temperature_switch"
       className="h-20 w-14 mr-2 rounded-lg bg-white bg-opacity-20 backdrop-blur-md grid grid-rows-2 active:scale-95 lg:grid lg:grid-rows-1 lg:grid-cols-2 lg:h-10 lg:w-24 "
     >
       <div
