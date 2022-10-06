@@ -15,7 +15,7 @@ export default function Weather() {
           selectedTemp={selectedTemp}
           setSelectedTemp={setSelectedTemp}
         />
-        <MoreInfoLargeDevices />
+        <MoreInfoLargeDevices tempUnit={selectedTemp} />
       </div>
       <WeekWeatherViewLargeScreen tempUnit={selectedTemp} />
     </div>

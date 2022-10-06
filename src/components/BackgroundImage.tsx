@@ -1,5 +1,5 @@
 import Image from "next/image";
-import background from "../../public/background_1.jpg";
+import background from "../../public/background_2.jpg";
 
 export default function BackgroundImage() {
   return (
