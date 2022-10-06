@@ -8,7 +8,6 @@
 
 <br/>
 <br/>
-
 #### Live Deployed Site [weather app](https://weather-app-myways.vercel.app/)
 
 ## Features
@@ -21,7 +20,7 @@
 
 ## Technologies Used
 
-All the versions of each technology could be found in `package.json` in the
+All the versions of each technology could be found in `package.json` file in the root of the project.
 
 - [Next.js](https://nextjs.org/) - Open-source web development framework for the frontend.It is built on top of React and supports many features such as Static site generation and server side rendering etc.
 - [Tailwind](https://tailwindcss.com/) - A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
